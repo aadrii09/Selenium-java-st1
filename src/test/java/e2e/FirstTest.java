@@ -31,10 +31,40 @@ public class FirstTest {
 
         WebElement productList = web.findElement(By.cssSelector("[data-test='inventory-list']"));
         Boolean isProductListVisible = productList.isDisplayed();
+
         Assertions.assertTrue(isProductListVisible);
-        System.out.println("TEST PASSED");
         
+        WebElement mochilaGuapa = web.findElement(By.id(("item_4_title_link")));
+        mochilaGuapa.click();
+
+        WebElement AddCart = web.findElement(By.id(("add-to-cart")));
+        AddCart.click();
+        
+        WebElement Carrito = web.findElement(By.cssSelector("[data-test='shopping-cart-link']"));
+        Carrito.click();
+
+        WebElement Check = web.findElement(By.id(("checkout")));
+        Check.click();
+
+        WebElement nombreInput = web.findElement(By.id("first-name"));
+        nombreInput.sendKeys("Adrian");
+
+        WebElement apellidoInput = web.findElement(By.id("last-name"));
+        apellidoInput.sendKeys("castro");
+
+
+
+
+
+
+
+
+
+
+
+
         //Para cerrar el navegador al finalizar la prueba
         // web.quit();
+        // System.out.println("TEST PASSED");
     }
 }
