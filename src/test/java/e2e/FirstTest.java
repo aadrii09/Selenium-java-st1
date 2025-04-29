@@ -50,10 +50,16 @@ public class FirstTest {
         nombreInput.sendKeys("Adrian");
 
         WebElement apellidoInput = web.findElement(By.id("last-name"));
-        apellidoInput.sendKeys("castro");
+        apellidoInput.sendKeys("Castro");
 
+        WebElement postalCode = web.findElement(By.id("postal-code"));
+        postalCode.sendKeys("15190");
 
+        WebElement Continuar = web.findElement(By.id(("continue")));
+        Continuar.click();
 
+        WebElement Finish =web.findElement(By.id(("finish")));
+        Finish.click();
 
 
 
