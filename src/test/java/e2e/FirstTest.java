@@ -62,13 +62,6 @@ public class FirstTest {
         Finish.click();
 
 
-
-
-
-
-
-
-
         //Para cerrar el navegador al finalizar la prueba
         // web.quit();
         // System.out.println("TEST PASSED");
