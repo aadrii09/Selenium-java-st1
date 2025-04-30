@@ -61,7 +61,6 @@ public class FirstTest {
         WebElement Finish =web.findElement(By.id(("finish")));
         Finish.click();
 
-
         //Para cerrar el navegador al finalizar la prueba
         // web.quit();
         // System.out.println("TEST PASSED");
